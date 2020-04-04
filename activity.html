@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Реставрационно-строительная компания АСК-Строй</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="logobox">
+        <!-- <img src="logo.jpg" alt="Logo" class="logo"> -->
+    </div>
+    <div class="heading-primary-main">
+      <a>(812) 626-65-98</a>
+      <a>email</a>
+    </div>
+    <div class="heading-primary-sub">
+      <a href="index.html">Главная</a>
+      <a href="activity.html">Деятельность</a>
+      <a>Лицензии</a>
+    </div>
+</header>
+
+<div class="slideshow-container">
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="mySlides fade">
+        <div class="imgCont">
+          <img class="img" src="./M140/1.jpg">
+          <img class="img" src="./M140/2.jpg">
+          <img class="img" src="./M140/3.jpg">
+          <img class="img" src="./M140/4.jpg">
+          <img class="img" src="./M140/5.jpg">
+          <img class="img" src="./M140/6.jpg">
+        </div>
+        <div class="text">Ремонтно-восстановительные работы по усилению кирпичной кладки стены здания в зоне лестницы по адресу: г. Санкт-Петербург, Московский пр.140, к.2</div>
+    </div>
+
+    <div class="mySlides fade">
+		<div class="imgCont">
+          <img class="img" src="./JD40/JD1.jpg">
+          <img class="img" src="./JD40/JD2.jpg">
+        </div>
+        <div class="text">Строительно-монтажные работы по устройству лестницы при ремонте административно-бытового здания с перепланировкой помещения по адресу: г. Санкт-Петербург, Железнодорожный пр., д. 40, лит В</div>
+    </div>
+
+    <div class="mySlides fade">
+		<div class="imgCont">
+          <img class="img" src="./SL15/1.jpg">
+          <img class="img" src="./SL15/2.jpg">
+          <img class="img" src="./SL15/3.jpg">
+          <img class="img" src="./SL15/4.jpg">
+          <img class="img" src="./SL15/5.jpg">
+          <img class="img" src="./SL15/6.jpg">
+        </div>
+        <div class="text">Комплекс работ по устройству шпунтового ограждения на объекте по адресу: Ленинградская область, Выборгский район, пос. Ильичево, ул. Солнечная, дом. 15</div>
+    </div>
+
+    <div class="dotCont">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
