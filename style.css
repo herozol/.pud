@@ -8,6 +8,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  text-align: center;
 }
 
 .header {
@@ -19,12 +20,12 @@ body {
   width: 100%;
   text-align: right;
   letter-spacing: 2px;
-  color: #ffffff !important;
+  color: #000 ;
+  /* !important */
 }
 
 .logobox {
   position: absolute;
-  /*height: 100%;*/
 }
 
 .logo {
@@ -50,7 +51,7 @@ body {
 }
 
 .main {
-  background-image: linear-gradient(to right, rgba(2,58,155, 0.6), rgba(2,58,155, 0.6)), url(./SL15/4.jpg);
+  background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./SL15/4.jpg);
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -59,17 +60,20 @@ body {
 }
 
 .mainCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
   font-size: 25px;
   font-weight: 700;
   color: #fff;
-  height: auto;
-  text-align: center;
-  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .mainTextHead {
-  margin: 130px auto 15px auto;
+  margin-bottom: 10px;
   font-size: 35px;
 }
 
@@ -78,8 +82,6 @@ body {
 }
 
 .addTextTable {
-  position: relative;
-  text-align: center;
   background-color: #0d2330;
   color: white;
   height: 30vh;
@@ -94,6 +96,7 @@ body {
 
 .addTextCol {
   width: 35%;
+  height: 100%;
 }
 
 .colTextCont {
@@ -116,7 +119,7 @@ body {
 
 .heading-primary-sub a,
 .heading-primary-main a{
-  color: #ffffff !important;
+  color: #fff;
   margin-left: 20px;
   text-decoration: none;
 }
@@ -240,5 +243,14 @@ body {
 @media screen and (max-width: 1230px) {
   .mainText {
     margin: 0 50px 0 50px;
+    font-size: 25px;
   }
+
+  .mainTextHead {
+    margin: 10px auto 10px auto;
+  }
+}
+
+.headButtons:hover {
+  text-shadow: #fff 0 0 15px;
 }
