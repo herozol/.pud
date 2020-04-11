@@ -50,7 +50,7 @@ body {
 }
 
 .main {
-  background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./SL15/4.jpg);
+  background-image: linear-gradient(to right, rgba(2,58,155, 0.6), rgba(2,58,155, 0.6)), url(./SL15/4.jpg);
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -74,13 +74,13 @@ body {
 }
 
 .mainText {
-  margin: auto 300px auto 300px;
+  margin: 0 300px 0 300px;
 }
 
 .addTextTable {
   position: relative;
   text-align: center;
-  background-color: #0a0a0a;
+  background-color: #0d2330;
   color: white;
   height: 30vh;
 }
@@ -89,7 +89,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
@@ -103,12 +102,16 @@ body {
 
 .colHead {
   font-size: 20px;
-  margin: 20px 0 20px 0;
+}
+
+.divColText {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .colText {
   font-size: 17px;
-  padding: 0 50px 0 50px;
+  margin: 0 10px 0 10px;
 }
 
 .heading-primary-sub a,
@@ -232,4 +235,10 @@ body {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width: 1230px) {
+  .mainText {
+    margin: 0 50px 0 50px;
+  }
 }
