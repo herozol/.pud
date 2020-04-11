@@ -53,7 +53,8 @@ body {
   background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./SL15/4.jpg);
   background-size: cover;
   background-position: center;
-  height: 55vh;
+  height: 60vh;
+  width: 100%;
   position: relative;
 }
 
@@ -63,22 +64,51 @@ body {
   font-weight: 700;
   color: #fff;
   height: auto;
-  margin: 200px 400px auto 400px;
   text-align: center;
+  display: block;
+}
+
+.mainTextHead {
+  margin: 130px auto 15px auto;
+  font-size: 35px;
 }
 
 .mainText {
+  margin: auto 300px auto 300px;
 }
 
-#addText {
+.addTextTable {
+  position: relative;
   text-align: center;
   background-color: #0a0a0a;
   color: white;
-  height: 35vh;
+  height: 30vh;
 }
 
-.colTexts {
-  padding: 0 150px 0 150px;
+.addTextRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.addTextCol {
+  width: 35%;
+}
+
+.colTextCont {
+  margin: 10px 10px 10px 10px;
+}
+
+.colHead {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+
+.colText {
+  font-size: 17px;
+  padding: 0 50px 0 50px;
 }
 
 .heading-primary-sub a,
@@ -100,7 +130,7 @@ body {
 
 .img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
   margin: 10px;
   width: 15%;
 }
@@ -190,12 +220,12 @@ body {
 }
 */
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
