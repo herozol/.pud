@@ -2,27 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
   text-decoration: none;
+  color: #aaa;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  text-align: center;
+
 }
 
 .header {
   height: 10vh;
-  background-color: rgb(0,127,255);
+  /* background-color: rgb(0,127,255); */
+  background-color: #0d2330;
   background-size: cover;
   background-position: top;
   position: relative;
   width: 100%;
   text-align: right;
-  letter-spacing: 2px;
-  border-bottom: 10px solid #0d2330;
+  color: #aaa;
+  /* letter-spacing: 4px; */
 }
 
 .logobox {
@@ -45,55 +46,64 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  text-align: right;
   right: 0;
-  margin: 10px 100px 10px 10px;
+  margin-right: 100px;
+  height: 100%;
 }
 
 .heading-primary-main {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .heading-primary-sub {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
+  border-top: 1px solid #aaa;
 }
 
 .main {
-  background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./back.jpg);
+  /* background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./back.jpg); */
+  background-image: linear-gradient(to right, rgba(50,50,50, 0.75), rgba(50,50,50, 0.75)), url(./back.jpg);
   background-size: cover;
   background-position: top;
   height: 60vh;
   width: 100%;
   position: relative;
+  color: #ddd;
 }
 
 .mainCont {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: absolute;
-  font-size: 25px;
   font-weight: 700;
-  color: #fff;
   height: 100%;
   width: 100%;
+  color: #ddd;
 }
 
 .mainTextHead {
-  margin-bottom: 10px;
   font-size: 35px;
+  margin: 0 600px 0 100px;
+  color: #ddd;
 }
 
 .mainText {
-  margin: 0 300px 0 300px;
+  font-size: 25px;
+  color: #ddd;
+  margin: 0 600px 0 100px;
+  text-align: left;
+  /* background: rgb(13,35,48, 0.7); */
 }
 
 .addTextTable {
   background-color: #0d2330;
   height: 30vh;
+  text-align: center;
+  color: #aaa;
 }
 
 .addTextRow {
@@ -109,27 +119,21 @@ body {
 }
 
 .colTextCont {
-  margin: 10px 10px 10px 10px;
+
 }
 
 .colHead {
   font-size: 20px;
+  margin: 20px 25px 20px 25px;
 }
 
 .divColText {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  margin: 0 25px 0 25px;
 }
 
 .colText {
   font-size: 17px;
   margin: 0 10px 0 10px;
-}
-
-.heading-primary-sub a,
-.heading-primary-main a{
-  color: #fff;
-  margin-left: 20px;
 }
 
 .mySlides {display: none}
@@ -235,6 +239,7 @@ body {
 
 .headButtons:hover {
   text-shadow: #fff 0 0 15px;
+  color: white;
 }
 
 .activityList {
@@ -253,6 +258,10 @@ body {
   text-shadow: #fff 0 0 15px;
 }
 
+.ALBlock:hover {
+  color:white;
+}
+
 .ALCont:active {
   transform: translateY(-1px);
 }
@@ -265,12 +274,11 @@ body {
   margin: 20px;
   display: flex;
   text-align: center;
-  align-items: center;
   border-radius: 20px;
 }
 
 .ALBlock {
-  margin: 50px;
+  margin: 40px;
   font-size: 17px;
 }
 
@@ -310,6 +318,7 @@ body {
   }
 
   .mainTextHead {
-    margin: 10px auto 10px auto;
+    margin: 10px 50px 10px 50px;
   }
+
 }
