@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  text-decoration: none;
 }
 
 body {
@@ -20,40 +22,62 @@ body {
   width: 100%;
   text-align: right;
   letter-spacing: 2px;
-  color: #000 ;
-  /* !important */
 }
 
 .logobox {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.logoText {
+  margin-left: 10px;
+}
+
+.logoTextTop {
+  margin: 0;
+  font-size: 10px;
+}
+
+.logoTextBot {
+  margin: 0;
+  font-weight: 700;
+  font-size: 45px;
 }
 
 .logo {
-  display: block;
+  position: relative;
+  margin: 10px;
+  width: 6vh;
+}
+
+.header-primary {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  right: 0;
+  margin: 10px 10px 10px 10px;
 }
 
 .heading-primary-main {
-  position: absolute;
-  right:1%;
-  right: 1%;
-  display: block;
   font-size: 20px;
   font-weight: 700;
 }
 
 .heading-primary-sub {
-  position: absolute;
-  bottom:1%;
-  right: 1%;
-  display: block;
   font-size: 30px;
   font-weight: 700;
 }
 
 .main {
-  background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./SL15/4.jpg);
+  background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./back.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: 60vh;
   width: 100%;
   position: relative;
@@ -83,7 +107,6 @@ body {
 
 .addTextTable {
   background-color: #0d2330;
-  color: white;
   height: 30vh;
 }
 
@@ -121,7 +144,6 @@ body {
 .heading-primary-main a{
   color: #fff;
   margin-left: 20px;
-  text-decoration: none;
 }
 
 .mySlides {display: none}
@@ -136,9 +158,8 @@ body {
 
 .img {
   display: block;
-  /* max-width: 100%; */
   margin: 10px;
-  width: 15%;
+  height: 100%;
 }
 
 .text {
@@ -225,6 +246,62 @@ body {
   animation-duration: 1.5s;
 }
 */
+
+.headButtons:hover {
+  text-shadow: #fff 0 0 15px;
+}
+
+.activityList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.ALCont:hover {
+  transform: translateY(-4px);
+  text-shadow: #fff 0 0 15px;
+}
+
+.ALCont:active {
+  transform: translateY(-1px);
+}
+
+.ALCont {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #0d2330;
+  margin: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 70px;
+}
+
+.ALBlock {
+  margin: 50px;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -249,8 +326,4 @@ body {
   .mainTextHead {
     margin: 10px auto 10px auto;
   }
-}
-
-.headButtons:hover {
-  text-shadow: #fff 0 0 15px;
 }

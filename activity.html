@@ -11,93 +11,42 @@
 <body>
 <header class="header">
     <div class="logobox">
-        <!-- <img src="logo.jpg" alt="Logo" class="logo"> -->
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="logoText">
+          <p class="logoTextTop">реставрационно-строительная компания</p>
+          <p class="logoTextBot">АСК-Строй</p>
+        </div>
     </div>
-    <div class="heading-primary-main">
-      <a>(812) 626-65-98</a>
-      <a>email</a>
-    </div>
-    <div class="heading-primary-sub">
-      <a class="headButtons" href="index.html">Главная</a>
-      <a class="headButtons" href="activity.html">Деятельность</a>
-      <a>Лицензии</a>
+    <div class="header-primary">
+      <div class="heading-primary-main">
+        <a>(812) 626-65-98</a>
+        <a>email</a>
+      </div>
+      <div class="heading-primary-sub">
+        <a class="headButtons" href="index.html">Главная</a>
+        <a class="headButtons" href="activity.html">Деятельность</a>
+        <a>Лицензии</a>
+      </div>
     </div>
 </header>
 
-<div class="slideshow-container">
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="mySlides fade">
-        <div class="imgCont">
-          <img class="img" src="./M140/1.jpg">
-          <img class="img" src="./M140/2.jpg">
-          <img class="img" src="./M140/3.jpg">
-          <img class="img" src="./M140/4.jpg">
-          <img class="img" src="./M140/5.jpg">
-          <img class="img" src="./M140/6.jpg">
-        </div>
-        <div class="text">Ремонтно-восстановительные работы по усилению кирпичной кладки стены здания в зоне лестницы по адресу: г. Санкт-Петербург, Московский пр.140, к.2</div>
+<div class="main" style="height: 90vh;">
+  <div class="activityList">
+    <div class="ALCont">
+      <a href="1.html" class="btn ALBlock">Ремонтно-восстановительные работы по усилению кирпичной кладки стены здания в зоне лестницы по адресу: г. Санкт-Петербург, Московский пр.140, к.2</a>
     </div>
-
-    <div class="mySlides fade">
-		<div class="imgCont">
-          <img class="img" src="./JD40/JD1.jpg">
-          <img class="img" src="./JD40/JD2.jpg">
-        </div>
-        <div class="text">Строительно-монтажные работы по устройству лестницы при ремонте административно-бытового здания с перепланировкой помещения по адресу: г. Санкт-Петербург, Железнодорожный пр., д. 40, лит В</div>
+    <div class="ALCont">
+      <a href="2.html" class="btn ALBlock">Строительно-монтажные работы по устройству лестницы при ремонте административно-бытового здания с перепланировкой помещения по адресу: г. Санкт-Петербург, Железнодорожный пр., д. 40, </a>
     </div>
-
-    <div class="mySlides fade">
-		<div class="imgCont">
-          <img class="img" src="./SL15/1.jpg">
-          <img class="img" src="./SL15/2.jpg">
-          <img class="img" src="./SL15/3.jpg">
-          <img class="img" src="./SL15/4.jpg">
-          <img class="img" src="./SL15/5.jpg">
-          <img class="img" src="./SL15/6.jpg">
-        </div>
-        <div class="text">Комплекс работ по устройству шпунтового ограждения на объекте по адресу: Ленинградская область, Выборгский район, пос. Ильичево, ул. Солнечная, дом. 15</div>
+    <div class="ALCont">
+      <a href="3.html" class="btn ALBlock">Комплекс работ по устройству шпунтового ограждения на объекте по адресу: Ленинградская область, Выборгский район, пос. Ильичево, ул. Солнечная, дом. 15</a>
     </div>
-
-    <div class="dotCont">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+    <div class="ALCont">
+      <a href="4.html" class="btn ALBlock">Усиление кирпичной кладки стен здания по адресу: г. Санкт-Петербург, ул. Чернышевского, д.18</a>
     </div>
-
-
+    </div>
+  </div>
 </div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 </body>
 </html>
