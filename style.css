@@ -243,14 +243,15 @@ body {
 }
 
 .activityList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   position: absolute;
+  right: 0%;
   height: 100%;
-  width: 100%;
+  width: 500px;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .ALCont:hover {
