@@ -22,35 +22,21 @@ body {
   width: 100%;
   text-align: right;
   letter-spacing: 2px;
+  border-bottom: 10px solid #0d2330;
 }
 
 .logobox {
   position: absolute;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   text-align: left;
-}
-
-.logoText {
-  margin-left: 10px;
-}
-
-.logoTextTop {
-  margin: 0;
-  font-size: 10px;
-}
-
-.logoTextBot {
-  margin: 0;
-  font-weight: 700;
-  font-size: 45px;
 }
 
 .logo {
   position: relative;
-  margin: 10px;
-  width: 6vh;
+  margin:  7px 0 7px 100px;
+  width: 7vh;
 }
 
 .header-primary {
@@ -61,7 +47,7 @@ body {
   align-items: flex-end;
   text-align: right;
   right: 0;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 100px 10px 10px;
 }
 
 .heading-primary-main {
@@ -280,7 +266,7 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  border-radius: 70px;
+  border-radius: 20px;
 }
 
 .ALBlock {
