@@ -89,6 +89,7 @@ body {
   font-size: 35px;
   margin: 0 600px 0 100px;
   color: #ddd;
+  font-weight: bolder;
 }
 
 .mainText {
@@ -125,6 +126,7 @@ body {
 .colHead {
   font-size: 20px;
   margin: 20px 25px 20px 25px;
+  font-weight: bold;
 }
 
 .divColText {
@@ -169,8 +171,7 @@ body {
 
 .ALCont {
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: auto;
   background-color: #0d2330;
   margin: 0;
   display: flex;
@@ -179,7 +180,7 @@ body {
 }
 
 .ALBlock {
-  margin: 40px;
+  margin: 15px;
   font-size: 17px;
 }
 
@@ -194,10 +195,11 @@ body {
 
 .mySlides {
   display: none;
+  height: inherit;
 }
 
 .imgCont {
-  height: auto;
+  height: inherit;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +207,8 @@ body {
 }
 
 .img {
-  height: 500px;
+  height: inherit;
+  width: inherit;
 }
 
 .text {
@@ -223,7 +226,7 @@ body {
 .slideshow-container {
   position: relative;
   background-color: white;
-  width: inherit;
+  width: 100%;
   height: inherit;
 }
 
