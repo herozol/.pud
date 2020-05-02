@@ -144,44 +144,44 @@ body {
 }
 
 .activityList {
-  flex-direction: column;
-  position: relative;
-  right: 0%;
-  height: 100%;
-  width: 420px;
-  overflow-y: scroll;
   display: flex;
+  justify-content: center;
   align-items: center;
-  /* justify-content: center; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
-
 .ALCont:hover {
   /* transform: translateY(-4px); */
   text-shadow: #fff 0 0 15px;
-  border: 1px solid #555;
-}
-
-.ALBlock:hover {
-  color:white;
+  border: 10px;
+  border-color: #fff;
 }
 
 .ALCont:active {
   /* transform: translateY(-1px); */
 }
-
 .ALCont {
   position: relative;
-  width: auto;
+  width: 400px;
+  height: 250px;
   background-color: #0d2330;
-  margin: 0;
+  margin: 20px;
   display: flex;
   text-align: center;
-  /* border-radius: 20px; */
+  align-items: center;
+  border-radius: 10px;
 }
 
 .ALBlock {
-  margin: 15px;
+  margin: 40px;
   font-size: 17px;
+}
+
+.ALBlock:hover {
+  color:white;
 }
 
 .activCont {
