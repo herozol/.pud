@@ -65,9 +65,11 @@ body {
 
 .main {
   /* background-image: linear-gradient(to right, rgba(2,58,155, 0.7), rgba(2,58,155, 0.7)), url(./back.jpg); */
-  background-image: linear-gradient(to right, rgba(50,50,50, 0.75), rgba(50,50,50, 0.75)), url(./back.jpg);
+  background: linear-gradient(to right, rgba(50,50,50, 0.75), rgba(50,50,50, 0.75)), url(./back.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 60vh;
   width: 100%;
   position: relative;
@@ -287,7 +289,7 @@ body {
   background-color: #717171;
 }
 
-    /* Fading animation */
+/* Fading animation */
 /*.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0.5s;
@@ -295,16 +297,6 @@ body {
   animation-duration: 1.5s;
 }
 */
-
-
-
-
-
-
-
-
-
-
 
 @-webkit-keyframes fade {
   from {opacity: .4}
